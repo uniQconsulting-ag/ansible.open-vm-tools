@@ -1,0 +1,4 @@
+---
+# vars file for roles/ansible.cos7-open-vm-tools
+cos7_openvmtools:
+  - { package: open-vm-tools }

@@ -1,0 +1,13 @@
+---
+- name: install open-vm-tools
+  yum:
+    name: '{{ item.package }}'
+    state: present
+  with_items: '{{ cos7_openvmtools }}'
+- name: enable and restart vmtoolsd
+  service:
+    name: vmtoolsd
+    enabled: yes
+  notify: restart vmtoolsd
+...
+

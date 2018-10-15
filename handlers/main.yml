@@ -1,0 +1,6 @@
+---
+# handlers file for roles/ansible.cos7-open-vm-tools
+- name: restart vmtoolsd
+  service:
+    name: vmtoolsd
+    state: restarted
