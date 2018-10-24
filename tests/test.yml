@@ -1,5 +1,10 @@
 ---
-- hosts: localhost
-  remote_user: root
-  roles:
-    - roles/ansible.cos7-open-vm-tools
+- hosts: all
+  become: yes
+  roles: 
+    - role: role_under_test
+  pre_tasks:
+  - name: install role dep uniQconsulting.mariadb
+    shell: ansible-galaxy install -p ./roles uniQconsulting.mariadb
+    changed_when: False
+...
