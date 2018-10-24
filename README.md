@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/uniQconsulting-ag/ansible.open-vm-tools.svg?branch=master)](https://travis-ci.org/uniQconsulting-ag/ansible.open-vm-tools)
+
 Role Name
 =========
 
