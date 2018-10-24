@@ -2,7 +2,7 @@
 galaxy_info:
   author: Chris Ruettimann
   company: uniQconsulting
-  description: installation and configuration of collabora CODE with nginx reverse proxy
+  description: installation of open VMware Tools
   role_name: open-vm-tools
   min_ansible_version: 2.4
   license: GPLv3
