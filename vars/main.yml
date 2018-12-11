@@ -1,4 +1,4 @@
 ---
-# vars file for roles/ansible.cos7-open-vm-tools
+# vars file for roles/uniQconsulting.open_vm_tools
 cos7_openvmtools:
   - { package: open-vm-tools }

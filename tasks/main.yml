@@ -1,5 +1,5 @@
 ---
-# tasks file for roles/ansible.cos7-open-vm-tools
+# tasks file for roles/uniQconsulting.open_vm_tools
 - name: install open-vm-toosl
   include_tasks: install-openvmtools.yml 
   tags: [open-vm-tools]
