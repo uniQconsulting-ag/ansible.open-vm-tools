@@ -1,4 +1,4 @@
 ---
-# vars file for roles/uniQconsulting.open_vm_tools
+# vars file for roles/uniqconsulting.open_vm_tools
 cos7_openvmtools:
   - { package: open-vm-tools }

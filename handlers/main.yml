@@ -1,5 +1,5 @@
 ---
-# handlers file for roles/uniQconsulting.open_vm_tools
+# handlers file for roles/uniqconsulting.open_vm_tools
 - name: restart vmtoolsd
   service:
     name: vmtoolsd
