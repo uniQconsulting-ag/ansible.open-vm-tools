@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Chris Ruettimann
-  company: uniQconsulting
+  company: uniqconsulting
   description: installation of open VMware Tools
   role_name: open_vm_tools
   min_ansible_version: 2.4
