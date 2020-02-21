@@ -5,13 +5,16 @@
 Install Open-VM-Tools with Ansible
 =================
 
-This Ansible role install open-vm-tools on a VMWare ESXi CentOS 7 Guest VM.
+This Ansible role install open-vm-tools on a VMWare ESXi Guest VM.
+
 
 Requirements
 ------------
-
-* Currently only tested with CentOS 7
 * Ansible 2.4 or higher is required for this Ansible Role
+Following OS are tested:
+* CentOS 7
+* CentOS 8
+* RHEL 8
 
 Role Variables
 --------------
