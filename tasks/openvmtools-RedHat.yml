@@ -8,6 +8,6 @@
   service:
     name: vmtoolsd
     enabled: yes
-  notify: restart vmtoolsd
+    state: restarted
 ...
 

@@ -1,5 +1,14 @@
 ---
 # tasks file for roles/uniqconsulting.open_vm_tools
-- name: install open-vm-toosl
-  include_tasks: install-openvmtools.yml 
-  tags: [open-vm-tools]
+- name: install openvmtools
+  include_tasks: '{{ openvmtools_host }}'
+  with_first_found:
+    - files:
+        - 'openvmtools-{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml'
+        - 'openvmtools-{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - 'openvmtools-{{ ansible_distribution }}.yml'
+        - 'openvmtools-{{ ansible_os_family }}.yml'
+      errors: 'ignore'
+  loop_control:
+    loop_var: openvmtools_host
+  tags: [openvmtools]

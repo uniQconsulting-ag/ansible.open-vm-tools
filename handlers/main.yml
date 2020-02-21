@@ -1,6 +1,2 @@
 ---
 # handlers file for roles/uniqconsulting.open_vm_tools
-- name: restart vmtoolsd
-  service:
-    name: vmtoolsd
-    state: restarted
