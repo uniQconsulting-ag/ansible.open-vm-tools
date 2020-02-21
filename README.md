@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/uniQconsulting-ag/ansible.open-vm-tools.svg?branch=master)](https://travis-ci.org/uniQconsulting-ag/ansible.open-vm-tools)
 
-[![uniQconsulting Logo](https://www.uniqconsulting.ch/fileadmin/images/logo-main.png | width=250x)](https://www.uniqconsulting.ch/)
+[![uniQconsulting Logo](https://avatars1.githubusercontent.com/u/43483026?s=200&v=4)](https://www.uniqconsulting.ch/)
+
 
 Install Open-VM-Tools with Ansible
 =================
