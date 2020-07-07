@@ -1,0 +1,9 @@
+---
+# There is no Ansible module for vmware-toolbox-cmd
+# so we're going to have to use it's CLI instead
+
+# According to VMware documentation, ntpd or chrony is more accurate than VMware time synchronisation
+- name: disable obtaining time from the hypervisor
+  command: /usr/bin/vmware-toolbox-cmd timesync disable
+  register: vmware_timesync
+  changed_when: vmware_timesync.rc != 0

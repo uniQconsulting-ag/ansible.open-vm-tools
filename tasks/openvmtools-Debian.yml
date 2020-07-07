@@ -1,11 +1,11 @@
 ---
 - name: install open-vm-tools
   yum:
-    name: '{{ cos7_openvmtools.package }}'
+    name: '{{ deb8_openvmtools.package }}'
     state: present
 
 - name: enable vmtoolsd and ensure it has started
   service:
-    name: '{{ cos7_openvmtools.service }}'
+    name: '{{ deb8_openvmtools.service }}'
     enabled: yes
     state: started
