@@ -11,4 +11,8 @@
       errors: 'ignore'
   loop_control:
     loop_var: openvmtools_host
-  tags: [openvmtools]
+  tags: [openvmtools, install]
+
+- name: configure openvmtools
+  include_tasks: config-openvmtools.yml
+  tags: [open-vm-tools, config]
