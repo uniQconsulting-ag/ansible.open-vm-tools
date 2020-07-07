@@ -4,8 +4,8 @@
     name: '{{ cos7_openvmtools.package }}'
     state: present
 
-- name: enable and restart vmtoolsd
+- name: enable vmtoolsd and ensure it has started
   service:
     name: '{{ cos7_openvmtools.service }}'
     enabled: yes
-    state: restarted
+    state: started
