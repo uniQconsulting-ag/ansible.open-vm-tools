@@ -2,3 +2,6 @@
 # vars file for roles/uniqconsulting.open_vm_tools
 cos7_openvmtools:
   - { package: open-vm-tools }
+
+deb8_openvmtools:
+  - { package: open-vm-tools }
