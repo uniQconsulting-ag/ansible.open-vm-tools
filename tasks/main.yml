@@ -1,14 +1,21 @@
 ---
-# tasks file for roles/uniqconsulting.open_vm_tools
-- name: install openvmtools
-  include_tasks: '{{ openvmtools_host }}'
-  with_first_found:
-    - files:
-        - 'openvmtools-{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml'
-        - 'openvmtools-{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
-        - 'openvmtools-{{ ansible_distribution }}.yml'
-        - 'openvmtools-{{ ansible_os_family }}.yml'
-      errors: 'ignore'
+
+# Don't touch this file
+
+- name: include global vars file if present
+  import_tasks: include-vars.yml
+
+- name: find all task files
+  local_action:
+    shell
+      ls -1 {{ role_path }}/tasks/*/*  | sed 's#.*\/##' | egrep '[0-9]{2}_.*\.yml' | sort -n -u
+  register: include_file_name_results
+
+- name: "include tasks"
+  include_tasks: "include-file.yml"
   loop_control:
-    loop_var: openvmtools_host
-  tags: [openvmtools]
+    loop_var: include_file_name 
+  with_items:
+    - "{{ include_file_name_results.stdout_lines }}"
+
+...

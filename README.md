@@ -1,40 +1,25 @@
-[![Build Status](https://travis-ci.org/uniQconsulting-ag/ansible.open-vm-tools.svg?branch=master)](https://travis-ci.org/uniQconsulting-ag/ansible.open-vm-tools)
+<a href="https://www.uniqconsulting.ch"><img src="https://www.uniqconsulting.ch/fileadmin/images/logo-main.png" alt="uniQconsulting" width="250px"/></a>
 
-[![uniQconsulting Logo](https://avatars1.githubusercontent.com/u/43483026?s=200&v=4)](https://www.uniqconsulting.ch/)
+# ansible.open_vm_tools
 
+TThis Ansible role install open-vm-tools on a VMWare ESXi Guest VM.
 
-Install Open-VM-Tools with Ansible
-=================
+Installation with ansible-galaxy:
 
-This Ansible role install open-vm-tools on a VMWare ESXi Guest VM.
+``` bash
+ansible-galaxy install uniqconsulting.open_vm_tools
+```
 
+## Requirements
 
-Requirements
-------------
+* Currently only tested with CentOS 7 & CentOS 8
 * Ansible 2.4 or higher is required for this Ansible Role
-* Following OS are tested:
-  * CentOS 7
-  * CentOS 8
-  * RHEL 8
 
-Role Variables
---------------
-Variables are self speaking or documented in:   
-* `defaults/main.yml`
-* `vars/main.yml`
-
-Dependencies
-------------
+## Dependencies
 
 This Ansilbe Role has no dependencies to other Ansilbe Roles
 
-Example Playbook
-----------------
-
-Example playbooks for this role are located in ´test´ folder:
-
-uniQconsulting ag
------------------
+# uniQconsulting ag
 
 uniQconsulting ag is an IT consulting company with headquarters in Bassersdorf, Switzerland and a wholly owned subsidiary of Netcloud AG since 2017.
 Netcloud is a privately held company, reputed for Network and Cloud Services in Switzerland. Although operating independently, both companies have a long history of close collaboration.
@@ -52,6 +37,6 @@ Compliance and security topics are becoming increasingly complex and expensive. 
 We believe in IT-driven success.
 
 License
---------------
+-------
 https://opensource.org/licenses/LGPL-3.0    
-Copyright (c) uniQconsulting ag - <support@uniqconsulting.ch>
+Copyright (c) uniQconsulting ag - Mike Gubser <mgubser@uniqconsulting.ch>

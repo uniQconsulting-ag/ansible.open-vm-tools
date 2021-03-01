@@ -1,6 +1,0 @@
----
-- hosts: localhost
-  become: yes
-  roles:
-    - uniqconsulting.open_vm_tools
-...

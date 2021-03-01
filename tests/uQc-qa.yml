@@ -1,6 +1,0 @@
----
-- hosts: vm17,vm18,rel8
-  become: yes
-  roles:
-    - uniqconsulting.open_vm_tools
-...
