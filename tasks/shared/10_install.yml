@@ -2,7 +2,7 @@
 
 - name: install packages
   yum:
-    name: 'openvmtools_packages'
+    name: "{{ openvmtools_packages }}"
     state: present
 
 - name: enable and restart vmtoolsd
